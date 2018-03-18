@@ -1,0 +1,20 @@
+<% include Basic\top %>
+<div class="ui main text container segment">
+  <div class="ui huge header">Edit Blog</div>
+  <form  class="ui form"action="/blogs" method="post">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" name="blog[title]" placeholder="Title">
+    </div>
+    <div class="field">
+      <label>Image Url</label>
+      <input type="text" name="blog[img]" placeholder="IMG Url">
+    </div>
+    <div class="field">
+      <label>Blog Contant</label>
+      <textarea name="blog[body]" rows="8" cols="80"></textarea>
+      <input type="submit" class="ui blue basic button">
+    </div>
+  </fomm>
+</div>
+<% include Basic\bottom %>
